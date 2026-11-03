@@ -1,0 +1,10 @@
+[package]
+name = "tp-core"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+libm.workspace = true
+
+[lints]
+workspace = true

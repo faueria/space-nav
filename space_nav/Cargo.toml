@@ -1,6 +1,17 @@
-[package]
-name = "space_nav"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+members = ["crates/*"]
+resolver = "3"
 
-[dependencies]
+[workspace.dependencies]
+libm = "0.2"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+float_cmp = "deny"
+indexing_slicing = "deny"
+panic = "deny"
+todo = "warn"
